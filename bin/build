@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+echo -e "\e[34m\e[1mC/C++ Buildpack \e[22m0.0.1\e[39m\e[0m"
+echo -e "\e[34m\e[2m\e[3mhttps://github.com/cdelashmutt-pivotal/cpp-buildpack\e[0m"
+
+# 1. GET ARGS
+layersdir=$1
+
+# 2. Make
+make all
